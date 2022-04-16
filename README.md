@@ -6,6 +6,12 @@ The main goal of this repository is to attempt to replicate some of the findings
 ## Data
 The data that was used is provided as supplementary data. This dataset can be located [here](https://www.sciencedirect.com/science/article/pii/S2352340917303487) under Appendix A of the paper "*Quantitative exploration of factors influencing psychotic disorder ailments in Nigeria.*"[[2](https://www.sciencedirect.com/science/article/pii/S2352340917303487)].
 
+## Steps
+1. Converted multi-label classification problem into conventional multi-classification problem.
+2. Perfomed One-hot-vector encoding of the categorical variables
+3. Implemented SMOTE for generating Synthetic Samples
+4. Model training, prediction and comparison
+
 ### References
 [[1](https://www.sciencedirect.com/science/article/pii/S2352914821000356)] Israel Elujide, Stephen G. Fashoto, Bunmi Fashoto, Elliot Mbunge, Sakinat O. Folorunso, and Jeremiah O. Olamijuwon. 2021. Application of deep and machine learning techniques for multilabel classification performance on psychotic disorder diseases. Informatics in Medicine Unlocked, 23:100545
 
