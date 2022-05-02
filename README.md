@@ -15,6 +15,9 @@ The data that was used is provided as supplementary data. This dataset can be lo
 6. Performed ablation study for hidden layers of DNN-MLP model evaluating the impact of each hidden layer on the accuracy of the model
 7. Created our own DNN-MLP model using PyTorch Neural Network Modules for training of both balanced and imbalanced datasets: Model prediction and comparison
 
+## Table of Results
+A pdf file is included which holds all the results obtained from our replication study and can be viewed [here](table_results.pdf).
+
 ### References
 [[1](https://www.sciencedirect.com/science/article/pii/S2352914821000356)] Israel Elujide, Stephen G. Fashoto, Bunmi Fashoto, Elliot Mbunge, Sakinat O. Folorunso, and Jeremiah O. Olamijuwon. 2021. Application of deep and machine learning techniques for multilabel classification performance on psychotic disorder diseases. Informatics in Medicine Unlocked, 23:100545
 
