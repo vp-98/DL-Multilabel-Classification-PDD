@@ -6,6 +6,10 @@ The main goal of this repository is to attempt to replicate some of the findings
 ## Data
 The data that was used is provided as supplementary data. This dataset can be located [here](https://www.sciencedirect.com/science/article/pii/S2352340917303487) under Appendix A of the paper "*Quantitative exploration of factors influencing psychotic disorder ailments in Nigeria.*"[[2](https://www.sciencedirect.com/science/article/pii/S2352340917303487)].
 
+## Data Processing
+In the original dataset, replace P with 1 and N with 0 for all the dependent variables, and combine all the dependent variables to create a combined target converting a multi-label classification to conventional multi-classification problem where there is only one target but there are more than two classes.
+Once complete, create two identical files for the data. The first copy of the data will remain as is, but for the second copy, remove rows with target value combinations of 11100, 01111, 10011, 00110, 00010, 10100, 10111. The first copy will have 500 records, and the second copy of the data will have 484 records of patients.
+
 ## Steps
 1. Converted multi-label classification problem into conventional multi-classification problem
 2. Perfomed One-hot-vector encoding of the categorical variables
