@@ -7,17 +7,24 @@ The main goal of this repository is to attempt to replicate some of the findings
 The data that was used is provided as supplementary data. This dataset can be located [here](https://www.sciencedirect.com/science/article/pii/S2352340917303487) under Appendix A of the paper "*Quantitative exploration of factors influencing psychotic disorder ailments in Nigeria.*"[[2](https://www.sciencedirect.com/science/article/pii/S2352340917303487)].
 
 ## Data Processing
-In the original dataset, replace P with 1 and N with 0 for all the dependent variables, and combine all the dependent variables to create a combined target converting a multi-label classification to conventional multi-classification problem where there is only one target but there are more than two classes.
-Once complete, create two identical files for the data. The first copy of the data will remain as is, but for the second copy, remove rows with target value combinations of 11100, 01111, 10011, 00110, 00010, 10100, 10111. The first copy will have 500 records, and the second copy of the data will have 484 records of patients.
+The original data has some invalid characters present for the UTF-8 decoder. To avoid running into problems later, manually remove the invalid characters and additional spaces present in rows `[2,3,4,5,10,14,17]`. The remaining data processing steps are all handled in the [jupyter notebook](multilabel_classification_PDD.ipynb). 
 
-## Steps
+## Implementation Steps Taken
 1. Converted multi-label classification problem into conventional multi-classification problem
 2. Perfomed One-hot-vector encoding of the categorical variables
 3. Implemented SMOTE for generating synthetic samples for dataset without class imbalance
-4. Machine Learning techniqus MLP, RF, SVM and DT for both balanced and imbalanced datasets: Model training, prediction and comparison
-5. Implemented DNN-MLP model using Keras function API for both balanced and imbalanced datasets: Model training, prediction and comparison
-6. Performed ablation study for hidden layers of DNN-MLP model evaluating the impact of each hidden layer on the accuracy of the model
-7. Created our own DNN-MLP model using PyTorch Neural Network Modules for training of both balanced and imbalanced datasets: Model prediction and comparison
+4. Created, trained, and evaluated ML models (MLP, RF, SVM, DT) for both balanced and imbalanced datasets 
+6. Created, trained, and evaluated DNN-MLP model using Keras function API for both balanced and imbalanced datasets
+7. Performed ablation study for hidden layers of DNN-MLP model evaluating the impact of each hidden layer on the accuracy of the model
+8. Created our own DNN-MLP model using PyTorch Neural Network Modules for training of both balanced and imbalanced datasets: Model prediction and comparison
+
+## Steps to Replicate
+1. Requires `python >= 3.7`
+2. Clone the repo or download the files
+3. Install the requirements if needed. `pip install -r requirements.txt`
+4. Obtain the data and remove the special characters manually.
+5. Add the data file named as `PDD_data.csv` into the same directory.
+6. Run the jupyter notebook.
 
 ## Table of Results
 A pdf file is included which holds all the results obtained from our replication study and can be viewed [here](table_results.pdf).
