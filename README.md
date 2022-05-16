@@ -29,6 +29,9 @@ The original data has some invalid characters present for the UTF-8 decoder. To 
 ## Table of Results
 A pdf file is included which holds all the results obtained from our replication study and can be viewed [here](table_results.pdf).
 
+## Report
+Our report can be found [here](CS%20598%20DL4H%20Final%20Report.pdf).
+
 ### References
 [[1](https://www.sciencedirect.com/science/article/pii/S2352914821000356)] Israel Elujide, Stephen G. Fashoto, Bunmi Fashoto, Elliot Mbunge, Sakinat O. Folorunso, and Jeremiah O. Olamijuwon. 2021. Application of deep and machine learning techniques for multilabel classification performance on psychotic disorder diseases. Informatics in Medicine Unlocked, 23:100545
 
